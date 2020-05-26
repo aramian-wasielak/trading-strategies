@@ -1,9 +1,3 @@
-# Evaluating Sample Trading Strategies Using Python
+# Evaluating Sample Trading Strategies Using Python (Work In Progress)
 
-Test
-
-[link to Google!](http://google.com)
-
-blah hello world!
-
-hello
+We are going to run and evaluate few trading strategies.
