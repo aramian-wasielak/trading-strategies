@@ -1,0 +1,13 @@
+name: trading-strategies
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.7
+  - jupyterlab
+  - numpy
+  - scipy
+  - matplotlib
+  - tqdm 
+  - dask
+  - pandas-datareader
