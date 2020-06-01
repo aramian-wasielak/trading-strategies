@@ -10,8 +10,6 @@ We start by [analysing](notebooks/Market-Data-EDA.ipynb) the [dataset downloaded
 
 We then [implement a simple backtester](notebooks/Basic-Strategies.ipynb) for running trading strategies. As part of it we develop a number of Python classes: Strategy, Backtest, ConfigSearch, etc. The backtester allows us to search for the best perforing ticker & strategy combinations. We run a backtest for all 3 strategies using 5 year's worth of market data.
 
-Run containing usage examples:
-
 ### Getting Started
 
 Install prerequisites:
