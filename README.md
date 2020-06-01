@@ -47,6 +47,7 @@ Jupyter notebooks are located under ```notebooks``` directory:
 
 * Kaggle dataset:
   * https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
+* [Quantopian lectures](https://www.quantopian.com/lectures)
 
 [1]: https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 [2]: https://dask.org/
