@@ -1,4 +1,4 @@
-# Evaluating Trading Strategies Using Python
+# Evaluation of Trading Strategies Using Python
 
 The following basic trading strategies are implemented and evaluated as part of this analysis:
 
