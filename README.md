@@ -22,7 +22,7 @@ Jupyter notebooks are located under ```notebooks``` directory.
 
 ### Potential Future Improvements
 
-* Implement and evaluate the Pair T
+* Implement and evaluate the Mean Reversion Pairs Trading strategy
   - https://www.quantstart.com/articles/Backtesting-An-Intraday-Mean-Reversion-Pairs-Strategy-Between-SPY-And-IWM/
   - https://www.pythonforfinance.net/2018/07/04/mean-reversion-pairs-trading-with-inclusion-of-a-kalman-filter/
   - https://medium.com/auquan/pairs-trading-data-science-7dbedafcfe5a
