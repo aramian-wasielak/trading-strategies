@@ -26,7 +26,8 @@ class EquityData:
         etf_dir (str): Directory location for ETF files.
         file_suffix (str): A file suffix used by stock & ETF files.
     """
-    def __init__(self, data_dir, stock_dir, etf_dir, file_suffix='.us.txt'):
+
+    def __init__(self, data_dir, stock_dir, etf_dir, file_suffix=".us.txt"):
         self.stock_dir = os.path.join(data_dir, stock_dir)
         self.etf_dir = os.path.join(data_dir, etf_dir)
         self.file_suffix = file_suffix
@@ -48,7 +49,7 @@ class EquityData:
         for file in os.listdir(dirname):
             # This dataset includes empty files which we exclude here.
             if os.stat(os.path.join(dirname, file)).st_size > 0:
-                tickers.append(file.replace(file_suffix, ''))
+                tickers.append(file.replace(file_suffix, ""))
 
         return tickers
 
@@ -101,25 +102,28 @@ class EquityData:
 
         result = pd.DataFrame()
         csv = pd.read_csv(os.path.join(dirname, ticker + self.file_suffix))
-        result = pd.DataFrame({
-            'date': csv['Date'],
-            'ticker': ticker,
-            'price': csv['Close'],
-            'volume': csv['Volume']
-        })
-        result['date'] = result['date'].map(
-            lambda t: datetime.strptime(t, '%Y-%m-%d')).to_numpy()
+        result = pd.DataFrame(
+            {
+                "date": csv["Date"],
+                "ticker": ticker,
+                "price": csv["Close"],
+                "volume": csv["Volume"],
+            }
+        )
+        result["date"] = (
+            result["date"].map(lambda t: datetime.strptime(t, "%Y-%m-%d")).to_numpy()
+        )
 
         if start_date is not None:
-            result = result[result['date'] >= start_date]
+            result = result[result["date"] >= start_date]
 
         if end_date is not None:
-            result = result[result['date'] <= end_date]
+            result = result[result["date"] <= end_date]
 
         result.index = result.date
 
         # Only including weekdays
-        result['dayofweek'] = pd.DatetimeIndex(result.index).dayofweek
+        result["dayofweek"] = pd.DatetimeIndex(result.index).dayofweek
         result = result[(result.dayofweek != 5) & (result.dayofweek != 6)]
 
         return result
