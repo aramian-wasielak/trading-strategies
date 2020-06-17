@@ -11,3 +11,4 @@ dependencies:
   - tqdm 
   - dask
   - pandas-datareader
+  - black
