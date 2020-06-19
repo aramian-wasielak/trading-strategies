@@ -18,8 +18,9 @@ class EquityData:
 
         https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 
-    Each file contains market data for one ticker (either stock or ETF). Also, each filename
-    has a specific naming convention: it consists of a ticker and a suffix (common to all files).
+    Each file contains market data for one ticker (either stock or ETF). Also, each
+    filename has a specific naming convention: it consists of a ticker and a suffix    asdfsadf sadfdsafa sadfsadf
+    (common to all files).
 
     Attributes:
         stock_dir (str): Directory location for stock files.
