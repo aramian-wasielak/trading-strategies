@@ -41,7 +41,6 @@ Jupyter notebooks are located under ```notebooks``` directory:
   - https://medium.com/auquan/pairs-trading-data-science-7dbedafcfe5a
   
 * Develop a more sophisticated backtester
-  - Extend the current backtester to support multiple tickers
 
 ### References
 
