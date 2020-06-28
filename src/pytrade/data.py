@@ -5,8 +5,8 @@ This format is utilized as part of the following Kaggle dataset:
     * https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 """
 
-from datetime import datetime
 import os
+from datetime import datetime
 
 import pandas as pd
 
