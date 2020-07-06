@@ -1,10 +1,4 @@
-# M5 Forecasting Hosted on Kaggle
-
-
-* https://en.wikipedia.org/wiki/Makridakis_Competitions
-* https://www.kaggle.com/c/m5-forecasting-accuracy/
-
-
+# Evaluation of Trading Strategies Using Python
 
 The following basic trading strategies are implemented and evaluated as part of this analysis:
 
